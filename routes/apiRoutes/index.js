@@ -18,7 +18,7 @@ api.get("/characters/:name", function (req, res) {
     Character.find({ name: name })
         .then(data => res.send(data))
         .catch(err => console.log(err));
-})
+});
 
 api.post("/addCharacter", function (req, res) {
     console.log(req.body);
@@ -26,6 +26,6 @@ api.post("/addCharacter", function (req, res) {
         res.send(data);
     }).catch(err => {
         console.log(err);
-    })
-})
+    });
+});
 module.exports = api;
