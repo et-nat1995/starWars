@@ -1,0 +1,14 @@
+{
+  "name": "react_boilerPlate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tamir <et.natanov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.4",
+    "morgan": "^1.9.1"
+  }
+}
