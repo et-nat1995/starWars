@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Home from "./pages/home"
 import Header from "./components/Header"
-import { Col, Row, Container } from "./components/Grid"
+import { Col, Row, Container } from "reactstrap";
 
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ class App extends Component {
       <Router>
         <div className="app">
           <Header />
-          <Container >
+          <Container>
             <Route exact path="/" component={Home} />
           </Container>
         </div>
