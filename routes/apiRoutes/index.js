@@ -1,5 +1,4 @@
 const api = require("express").Router();
-const mongoose = require("mongoose");
 const db = require("../../models/index");
 const Character = db.Character;
 
