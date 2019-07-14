@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Container } from "reactstrap";
+import { Col, Row, Container, Button } from "reactstrap";
 
 
 import MyModal from "../../components/Modal"
@@ -42,6 +42,11 @@ class Home extends Component {
                     <div className="flex">
                         {this.state.starWars ? this.state.starWars.map((item, i) => <MyCard {...item} key={i} />) : {}}
                     </div>
+                    <Row>
+                        <Col xs="4">
+                            <Button href="/add">Add Something</Button>
+                        </Col>
+                    </Row>
                 </Container>
             </div>
         )
